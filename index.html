@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Komik Tunggal Saya</title> <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="comic-main-title"></h1>
+    </header>
+    <main>
+        <section class="single-comic-info">
+            <img id="comic-cover" src="" alt="Cover Komik">
+            <div class="info-text">
+                <h2 id="comic-title-detail"></h2>
+                <p id="comic-description"></p>
+            </div>
+        </section>
+        <section class="chapter-list-section">
+            <h3>Daftar Chapter</h3>
+              <p>Informasi penting: Jika Ingin Melihat Comic Lainnya Bisa <br>
+              Hubungi Kami Di LIVECHAT, Yang sudah tersedia <br>
+              Di Pojok Kanan Bawah, kami<br>
+              akan memberikan link comic anime yang anda inginkan</p>
+            <ul id="chapters">
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+    <p>Terhubung dengan kami:</p>
+    <a href="https://www.facebook.com/profile.php?id=100093002076780" target="_blank" title="Facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-square"></i>
+        </a>
+    <a href="https://wa.me/6281376014684" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+    <a href="https_URL_INSTAGRAM_ANDA" target="_blank" title="Instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    </footer>
+
+    <script>
+        // Data untuk komik tunggal Anda
+        const comicData = {
+            mainTitle: "Comic Sans Anime", // Judul besar di header
+            title: "Kajiya de Hajimeru Isekai Slow Life", // Judul di bawah cover
+            description: "Suatu malam, Eizo, seorang budak perusahaan yang malang, menyelamatkan seekor kucing dan tertabrak truk. Kucing yang tampaknya memiliki hubungan dengan dunia paralel itu, sebagai balasan atas bantuannya, memberikan Eizo keterampilan yang diinginkannya dan mereinkarnasinya ke dunia lain. Eizo, yang memiliki hobi membuat kerajinan tangan dan ingin menggunakan keterampilan ini untuk mencari nafkah, memilih untuk bereinkarnasi sebagai pandai besi. Maka ia pun memulai hidupnya di dunia lain sebagai pandai besi sesuai keinginannya. Namun, kreasi Eizo berada di level yang berbeda yang akan mengguncang dunia baru ini.",
+            cover: "images/my_comic/cover.jpg", // Sesuaikan path ke cover Anda
+            chapters: [
+                {
+                    title: "Chapter 1: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter1/", // Path ke folder chapter
+                    pageCount: 40,                           // Jumlah halaman di chapter ini
+                    // pagePrefix: "page", // Hapus atau kosongkan pagePrefix
+                    pageNameSuffix: ".kiryuu.id",         // Suffix baru setelah nomor halaman
+                    pageExtension: "jpg"                    // Ekstensi file
+                },
+                {
+                    title: "Chapter 2: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter2/",
+                    pageCount: 36,
+                    // pagePrefix: "panel_", // Hapus atau kosongkan pagePrefix
+                    pageNameSuffix: ".kiryuu.id",     // Contoh suffix lain
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 3: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter3/",
+                    pageCount: 34,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 4: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter4/",
+                    pageCount: 26,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 5: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter5/",
+                    pageCount: 36,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 6: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter6/",
+                    pageCount: 31,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 7: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter7/",
+                    pageCount: 28,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 8: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter8/",
+                    pageCount: 26,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 9: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter9/",
+                    pageCount: 34,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 10: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter10/",
+                    pageCount: 32,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 10.5: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter10.5/",
+                    pageCount: 14,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 11: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter11/",
+                    pageCount: 30,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 12: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter12/",
+                    pageCount: 29,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 12.5: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter12.5/",
+                    pageCount: 8,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 13: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter13/",
+                    pageCount: 31,
+                    pageNameSuffix: ".kiryuu.id",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 14: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter14/",
+                    pageCount: 43,
+                    pageNameSuffix: ".kiryuu.org",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 15: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter15/",
+                    pageCount: 37,
+                    pageNameSuffix: ".kiryuu.org",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 15.5: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter15.5/",
+                    pageCount: 10,
+                    pageNameSuffix: ".kiryuu.org",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 16: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter16/",
+                    pageCount: 33,
+                    pageNameSuffix: ".kiryuu.org",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 17: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter17/",
+                    pageCount: 35,
+                    pageNameSuffix: ".kiryuu.org",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 18: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter18/",
+                    pageCount: 38,
+                    pageNameSuffix: ".kiryuu.org",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 19: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter19/",
+                    pageCount: 37,
+                    pageNameSuffix: ".kiryuu.one",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 20: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter20/",
+                    pageCount: 44,
+                    pageNameSuffix: ".kiryuu.one",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 20.5: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter20.5/",
+                    pageCount: 14,
+                    pageNameSuffix: ".kiryuu01.com",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 21: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter21/",
+                    pageCount: 40,
+                    pageNameSuffix: ".kiryuu01.com",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 22: Kajiya de Hajimeru Isekai Slow Life",
+                    pagesPath: "images/my_comic/chapter22/",
+                    pageCount: 38,
+                    pageNameSuffix: ".kiryuu01.com",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                },
+                {
+                    title: "Chapter 23: Next ComingSoon",
+                    pagesPath: "images/my_comic/chapter23/",
+                    pageCount: 37,
+                    pageNameSuffix: ".kiryuu01.com",          // Contoh suffix lain lagi
+                    pageExtension: "jpg"
+                }
+                
+                // Tambahkan chapter lain jika ada
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('comic-main-title').textContent = comicData.mainTitle || comicData.title;
+            document.getElementById('comic-title-detail').textContent = comicData.title;
+            document.getElementById('comic-description').textContent = comicData.description;
+            document.getElementById('comic-cover').src = comicData.cover;
+            document.getElementById('comic-cover').alt = `Cover ${comicData.title}`;
+
+            const chaptersList = document.getElementById('chapters');
+            comicData.chapters.forEach((chapter, index) => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                // Kita akan mengirim data chapter melalui URL atau localStorage
+                link.href = `reader.html?chapter=${index}`;
+                link.textContent = chapter.title;
+                listItem.appendChild(link);
+                chaptersList.appendChild(listItem);
+            });
+
+            // Simpan data komik ke localStorage agar bisa diakses oleh reader.html
+            localStorage.setItem('singleComicData', JSON.stringify(comicData));
+        });
+    </script>
+
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 19162369;
+    window.__lc.integration_name = "manual_channels";
+    window.__lc.product_name = "livechat";
+    (function(n,t,c){
+      function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}
+      var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},
+      once:function(){i(["once",c.call(arguments)])},
+      off:function(){i(["off",c.call(arguments)])},
+      get:function(){
+        if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");
+        return i(["get",c.call(arguments)])
+      },
+      call:function(){i(["call",c.call(arguments)])},
+      init:function(){
+        var n=t.createElement("script");
+        n.async=!0,n.type="text/javascript";
+        n.src="https://cdn.livechatinc.com/tracking.js";
+        t.head.appendChild(n)
+      }};
+      !n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e
+    }(window,document,[].slice))
+  </script>
+  <noscript>
+    <a href="https://www.livechat.com/chat-with/19162369/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
+  <!-- End LiveChat -->
+
+</body>
+</html>
